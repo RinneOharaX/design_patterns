@@ -1,4 +1,4 @@
-package com.itheima.principles.dependenceInversion.before;
+package com.itheima.principles.dependenceInversion.after;
 
 /**
  * @PROJECT_NAME: design_patterns
@@ -7,46 +7,26 @@ package com.itheima.principles.dependenceInversion.before;
  * @DATE: 2023/4/18 17:42
  */
 
-/*这样的情况下，我们如果想修改电脑的某一个配置，Computer类中的内容要做大幅度修改，会非常麻烦，不利于维护，所以便有了依赖倒转后的改进*/
+/*如果将实现类全部抽取成接口，通过多态创建出需要的子类，再供Computer调用，这样就可以减少大幅度的修改，降低耦合度*/
 public class Computer {
-    private InterCPU interCPU;
-    private KingstonMemory kingstonMemory;
-    private  XiJieHardDisk xiJieHardDisk;
+    private CPU cpu;
+    private Memory memory;
+    private HardDisk hardDisk;
 
-    public Computer(InterCPU interCPU, KingstonMemory kingstonMemory, XiJieHardDisk xiJieHardDisk) {
-        this.interCPU = interCPU;
-        this.kingstonMemory = kingstonMemory;
-        this.xiJieHardDisk = xiJieHardDisk;
-    }
-
-    public InterCPU getInterCPU() {
-        return interCPU;
-    }
-
-    public void setInterCPU(InterCPU interCPU) {
-        this.interCPU = interCPU;
-    }
-
-    public KingstonMemory getKingstonMemory() {
-        return kingstonMemory;
-    }
-
-    public void setKingstonMemory(KingstonMemory kingstonMemory) {
-        this.kingstonMemory = kingstonMemory;
-    }
-
-    public XiJieHardDisk getXiJieHardDisk() {
-        return xiJieHardDisk;
-    }
-
-    public void setXiJieHardDisk(XiJieHardDisk xiJieHardDisk) {
-        this.xiJieHardDisk = xiJieHardDisk;
+    public Computer(CPU cpu, Memory memory, HardDisk hardDisk) {
+        this.cpu = cpu;
+        this.memory = memory;
+        this.hardDisk = hardDisk;
     }
 
     public Computer() {
     }
 
+
     public void computerRun(){
+        CPU interCPU=new InterCPU();
+        Memory kingstonMemory=new KingstonMemory();
+        HardDisk  xiJieHardDisk=new XiJieHardDisk();
         interCPU.run();
         kingstonMemory.save();
         xiJieHardDisk.save("数据");

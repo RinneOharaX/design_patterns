@@ -1,8 +1,6 @@
-package com.itheima.pattern.Singleton;
+package com.itheima.pattern.SingletonType;
 
-import java.io.Serializable;
 import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
 
 /**
  * @PROJECT_NAME: design_patterns

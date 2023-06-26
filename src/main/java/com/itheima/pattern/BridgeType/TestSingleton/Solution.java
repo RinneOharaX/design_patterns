@@ -1,10 +1,8 @@
-package com.itheima.pattern.TestSingleton;
+package com.itheima.pattern.BridgeType.TestSingleton;
 
-import javax.swing.text.html.parser.Entity;
 import java.math.BigDecimal;
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * @PROJECT_NAME: design_patterns

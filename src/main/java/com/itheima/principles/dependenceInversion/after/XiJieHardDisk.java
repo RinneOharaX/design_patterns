@@ -1,4 +1,4 @@
-package com.itheima.principles.dependenceInversion.before;
+package com.itheima.principles.dependenceInversion.after;
 
 /**
  * @PROJECT_NAME: design_patterns
@@ -6,7 +6,7 @@ package com.itheima.principles.dependenceInversion.before;
  * @USER: Administrator
  * @DATE: 2023/4/18 17:36
  */
-public class XiJieHardDisk {
+public class XiJieHardDisk implements HardDisk{
     public void save(String data){
         System.out.println("XiJie硬盘保存数据");
     }

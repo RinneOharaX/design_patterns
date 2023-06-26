@@ -1,8 +1,4 @@
-package com.itheima.pattern.Proxy.DynamicProxy;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+package com.itheima.pattern.ProxyType.DynamicProxy;
 
 /**
  * @PROJECT_NAME: design_patterns

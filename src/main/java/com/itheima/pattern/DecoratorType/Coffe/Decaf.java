@@ -1,4 +1,10 @@
-package com.itheima.pattern.DecoratorType;
+package com.itheima.pattern.DecoratorType.Coffe;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.lang.model.element.NestingKind;
 
 /**
  * @PROJECT_NAME: design_patterns
@@ -6,14 +12,13 @@ package com.itheima.pattern.DecoratorType;
  * @USER: Administrator
  * @DATE: 2023/6/16 16:07
  */
+
 public class Decaf extends Coffee {
-
     public Decaf(){
-        this.setDescription("摩卡");
+        setDescription("摩卡");
+        setPrice(25);
     }
-
-
     public int cost(){
-        return 18;
+        return super.getPrice();
     }
 }

@@ -1,2 +1,6 @@
-package com.itheima.principles.CompositionOverInheritance;public interface Color {
+package com.itheima.principles.CompositionOverInheritance;
+
+public interface Color {
+    void mycolor();
+
 }

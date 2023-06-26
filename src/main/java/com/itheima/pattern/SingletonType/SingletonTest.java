@@ -1,4 +1,4 @@
-package com.itheima.pattern.Singleton;
+package com.itheima.pattern.SingletonType;
 
 /**
  * @PROJECT_NAME: design_patterns

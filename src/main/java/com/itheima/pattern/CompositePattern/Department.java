@@ -1,8 +1,26 @@
-package com.itheima.pattern.CompositePattern;/** 
+package com.itheima.pattern.CompositePattern;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+/**
  * @PROJECT_NAME: design_patterns
  * @DESCRIPTION:
  * @USER: Administrator
  * @DATE: 2023/6/19 17:13
  */
-public class Department {
+
+@NoArgsConstructor
+public class Department extends  OrganizationComponent{
+
+
+    @Override
+    public void print() {
+        System.out.println(getName());
+    }
+
+    public Department(String name, String describe) {
+        super(name, describe);
+    }
 }

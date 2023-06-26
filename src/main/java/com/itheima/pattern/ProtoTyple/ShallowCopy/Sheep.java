@@ -22,7 +22,6 @@ public class Sheep implements Cloneable {
     private Integer age;
     private String color;
 
-
     //重写clone方法，返回一个sheep对象
     @Override
     public Object clone(){

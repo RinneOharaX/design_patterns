@@ -1,4 +1,9 @@
-package com.itheima.pattern.DecoratorType;
+package com.itheima.pattern.DecoratorType.Decorator;
+
+import com.itheima.pattern.DecoratorType.Coffe.Drink;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @PROJECT_NAME: design_patterns
@@ -6,8 +11,13 @@ package com.itheima.pattern.DecoratorType;
  * @USER: Administrator
  * @DATE: 2023/6/16 16:20
  */
+
 public class Milk  extends Decorator{
-    public int cost(Integer count){
-        return 10*count+super.getDrink().cost();
+
+    public Milk(Drink drink){
+        super(drink);
+        setDescription("牛奶");
+        setPrice(10);
     }
+
 }

@@ -1,4 +1,9 @@
-package com.itheima.pattern.DecoratorType;
+package com.itheima.pattern.DecoratorType.Coffe;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 /**
  * @PROJECT_NAME: design_patterns
@@ -9,6 +14,6 @@ package com.itheima.pattern.DecoratorType;
 
 public class Coffee extends Drink {
     public int cost(){
-        return 0;
+        return super.getPrice();
     }
 }

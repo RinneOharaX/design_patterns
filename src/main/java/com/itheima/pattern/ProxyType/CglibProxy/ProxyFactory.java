@@ -1,4 +1,4 @@
-package com.itheima.pattern.Proxy.CglibProxy;
+package com.itheima.pattern.ProxyType.CglibProxy;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

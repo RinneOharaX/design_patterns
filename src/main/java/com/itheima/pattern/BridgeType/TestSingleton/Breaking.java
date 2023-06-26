@@ -1,4 +1,4 @@
-package com.itheima.pattern.TestSingleton;
+package com.itheima.pattern.BridgeType.TestSingleton;
 
 import java.io.*;
 import java.lang.reflect.Constructor;
@@ -28,7 +28,7 @@ public class Breaking {
 
     public static void BreakingSingletonByReflection(){
         try {
-            Class<DoubleCheckingSingleton> clazz = (Class<DoubleCheckingSingleton>) Class.forName("com.itheima.pattern.TestSingleton.DoubleCheckingSingleton");
+            Class<DoubleCheckingSingleton> clazz = (Class<DoubleCheckingSingleton>) Class.forName("com.itheima.pattern.BridgeType.TestSingleton.DoubleCheckingSingleton");
             Constructor<DoubleCheckingSingleton> constructor = clazz.getDeclaredConstructor();
             constructor.setAccessible(true);
             DoubleCheckingSingleton doubleCheckingSingleton1 = constructor.newInstance();

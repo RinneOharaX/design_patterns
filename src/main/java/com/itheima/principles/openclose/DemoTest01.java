@@ -1,4 +1,4 @@
-package com.itheima.principles.demo01;
+package com.itheima.principles.openclose;
 
 /**
  * @PROJECT_NAME: design_patterns

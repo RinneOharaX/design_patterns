@@ -1,4 +1,4 @@
-package com.itheima.pattern.Proxy.CglibProxy;
+package com.itheima.pattern.ProxyType.CglibProxy;
 
 /**
  * @PROJECT_NAME: design_patterns

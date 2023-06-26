@@ -1,4 +1,4 @@
-package com.itheima.pattern.TestSingleton;
+package com.itheima.pattern.BridgeType.TestSingleton;
 
 /**
  * @PROJECT_NAME: design_patterns

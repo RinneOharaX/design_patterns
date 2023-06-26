@@ -1,6 +1,4 @@
-package com.itheima.pattern.Proxy.StaticProxy;
-
-import java.lang.reflect.Proxy;
+package com.itheima.pattern.ProxyType.StaticProxy;
 
 /**
  * @PROJECT_NAME: design_patterns
@@ -12,7 +10,7 @@ import java.lang.reflect.Proxy;
 public class Main {
     public static void main(String[] args) {
         //通过代理对象去完成上课
-        ProxyTeacher proxyTeacher=new ProxyTeacher(new Teacher("english"));
+        ITeacherDao proxyTeacher=new ProxyTeacher(new Teacher("english"));
         proxyTeacher.teach();
     }
 }

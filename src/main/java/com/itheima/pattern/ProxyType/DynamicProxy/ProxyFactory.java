@@ -1,4 +1,4 @@
-package com.itheima.pattern.Proxy.DynamicProxy;
+package com.itheima.pattern.ProxyType.DynamicProxy;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

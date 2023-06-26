@@ -1,13 +1,5 @@
-package com.itheima.pattern.TestSingleton;
+package com.itheima.pattern.BridgeType.TestSingleton;
 
-
-
-import java.io.File;
-import java.io.PrintStream;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.*;
-import java.util.stream.Stream;
 
 /**
  * @PROJECT_NAME: design_patterns

@@ -1,4 +1,8 @@
-package com.itheima.pattern.DecoratorType;
+package com.itheima.pattern.DecoratorType.Coffe;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @PROJECT_NAME: design_patterns
@@ -6,11 +10,14 @@ package com.itheima.pattern.DecoratorType;
  * @USER: Administrator
  * @DATE: 2023/6/16 16:07
  */
+
 public class Espresso extends Coffee {
-    public Espresso (){
-        this.setDescription("拿铁咖啡");
+    public Espresso(){
+        setPrice(20);
+        setDescription("意大利咖啡");
     }
+
     public int cost(){
-        return 15;
+        return super.getPrice();
     }
 }
